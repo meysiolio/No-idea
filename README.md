@@ -1,35 +1,31 @@
-<h1> 
-salam farnoosh
-</h1>
-There is an array of  integers. There are also  disjoint sets,  and , each containing  integers. You like all the integers in set  and dislike all the integers in set . Your initial happiness is . For each  integer in the array, if , you add  to your happiness. If , you add  to your happiness. Otherwise, your happiness does not change. Output your final happiness at the end.
 
-Note: Since  and  are sets, they have no repeated elements. However, the array might contain duplicate elements.
+There is an array of `n` integers. There are also `2` **disjoint sets**, `A` and `B`, each containing `m` integers. You like all the integers in set `A` and dislike all the integers in set `B`. Your initial happiness is `0`. For each `i` integer in the array, if `i ∈ A`, you add `1` to your happiness. If `i ∈ B`, you add `-1` to your happiness. Otherwise, your happiness does not change. Output your final happiness at the end.  
 
-Constraints
+**Note**: Since ***A*** and ***B*** are sets, they have no repeated elements. However, the array might contain duplicate elements.  
 
+**Input Format**
 
+The first line contains integers `n` and `m` separated by a space.  
+The second line contains `n` integers, the elements of the array.  
+The third and fourth lines contain `m` integers, `A` and `B`, respectively.  
 
-Input Format
+**Output Format**
 
-The first line contains integers  and  separated by a space.
-The second line contains  integers, the elements of the array.
-The third and fourth lines contain  integers,  and , respectively.
+Output a single integer, your total happiness.  
 
-Output Format
-
-Output a single integer, your total happiness.
-
-Sample Input
-
+**Sample Input**
+```
 3 2
 1 5 3
 3 1
 5 7
-Sample Output
-
+```
+**Sample Output**
+```
 1
-Explanation
+```
+**Explanation**
 
-You gain  unit of happiness for elements  and  in set . You lose  unit for  in set . The element  in set  does not exist in the array so it is not included in the calculation.
+You gain `1` unit of happiness for elements `3` and `1` in set `A`. You lose `1` unit for `5` in set `B`. The element `7` in set `B` does not exist in the array so it is not included in the calculation.  
 
-Hence, the total happiness is .
+Hence, the total happiness is `2 - 1 = 1`.
